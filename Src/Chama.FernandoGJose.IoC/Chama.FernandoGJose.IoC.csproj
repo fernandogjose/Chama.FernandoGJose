@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.5" />
+    <PackageReference Include="Roslynator.Analyzers" Version="2.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Chama.FernandoGJose.Application\Chama.FernandoGJose.Application.csproj" />
+    <ProjectReference Include="..\Chama.FernandoGJose.Email\Chama.FernandoGJose.Email.csproj" />
+    <ProjectReference Include="..\Chama.FernandoGJose.MessageBus\Chama.FernandoGJose.MessageBus.csproj" />
+    <ProjectReference Include="..\Chama.FernandoGJose.Redis\Chama.FernandoGJose.Redis.csproj" />
+    <ProjectReference Include="..\Chama.FernandoGJose.SqlServer\Chama.FernandoGJose.SqlServer.csproj" />
+  </ItemGroup>
+
+</Project>
